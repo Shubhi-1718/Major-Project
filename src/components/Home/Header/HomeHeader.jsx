@@ -54,7 +54,7 @@ const HomeHeader = () => {
             <span className="text-5xl">
             <img
             className="h-[3.0rem]"
-            src="public/1.png"
+            src="/public/1.png"
             alt="logo"
             />
             </span>
