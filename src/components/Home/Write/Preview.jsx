@@ -45,8 +45,9 @@ const Preview = ({ setPublish, description, title }) => {
         return;
       }
 
-      if (preview.title.length < 15) {
-        toast.error("Title must be at least 15 letters");
+      if (preview.title.length < 15 || preview.title=="  ") {
+        toast.error("Title must be at least 15 letters or with no extra spaces");
+        return;
       }
 
       const collections = collection(db, "posts");
